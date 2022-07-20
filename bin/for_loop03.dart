@@ -1,4 +1,8 @@
 int func(List<int> numbers) {
+  int u = 0;
+  for (int q = 1; q < numbers.length; q += 2) {
+    u += numbers[q];
+  }
 /*
    Given a list of numbers, return the sum of the numbers at odd index in the list
 Args:
@@ -6,7 +10,9 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+  return u;
 }
 
-void main() {}
+void main() {
+  print(func([2, 3, 2, 3, 2, 3, 2]));
+}
