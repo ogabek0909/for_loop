@@ -1,4 +1,9 @@
-int func(List numbers) {
+int func(List<int> numbers) {
+  int y = 0;
+
+  for (int q = 0; q < numbers.length; q++) {
+    y += numbers[q];
+  }
   /*
 Given the list of numbers, return sum of the numbers in the list
 Args:
@@ -6,7 +11,9 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+  return y;
 }
 
-void main() {}
+void main() {
+  print(func([324, 3, 3, 3, 3, 3, 2, 2, 2, 3]));
+}
