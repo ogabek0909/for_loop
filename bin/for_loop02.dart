@@ -14,5 +14,5 @@ Return:
 }
 
 void main() {
-  print(func([1, 23, 4, 33, 3, 32, 1]));
+  print(func([1, 23, 4, 33, 3, 3, 32, 1]));
 }
